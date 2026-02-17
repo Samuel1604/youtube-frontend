@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(30, 28, 28); */
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 10px 20px 20px;
+  background-color: rgb(37, 36, 36);
+  margin-bottom: 12px;
+}
+main {
+  margin: 30px auto;
+}
+
+.logo-container {
+  display: flex;
+  gap: 6px;
+}
+
+.logo-container img {
+  width: auto;
+  height: 24px;
+  color: white;
+}
+
+.logo-container p {
+  text-align: start;
+  font-size: x-small;
+  font-weight: 100;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-mic-container {
+  padding: 8px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(31, 30, 30);
+}
+
+.search-mic {
+  font-size: 24px;
+}
+
+.search-form {
+  width: 300px;
+  display: flex;
+}
+
+.search-form input {
+  background-color: black;
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  box-sizing: border-box;
+  border: 1px silver solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.search-form button {
+  background-color: rgb(31, 30, 30);
+  color: white;
+  font-size: 16px;
+  border: 1px silver solid;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left:none ;
+  padding: 8px;
+  margin: 0 auto;
+}
+.info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info img {
+  border-radius: 100px;
+  width: 35px;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 4px;
+  background-color: rgb(49, 47, 47);
+}
+
+.create-icon {
+  font-size: 18px;
+  padding: 4px;
+}
+
+.create p {
+  padding: 4px;
+}
+.bell-icon {
+  font-size: 24px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.video-container iframe {
+  width: 96%;
+  height: 320px;
+  margin: 8px auto;
+  border-radius: 8px;
+  border: none;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(3, auto);
+  row-gap: 16px;
+  column-gap: 16px;
+  place-items: center;
+  place-content: center;
+  max-width: 100%;
+  margin: 0 20px;
+}
+.video-container:hover {
+  background-color: hsl(50 33% 25% / 0.75);
+  transition: 1.5s;
+}
+
+.video-desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px;
+}
+
+.video-desc img {
+  border-radius: 100px;
+  width: 50px;
+  line-height: 2;
+}
+
+.video-caption {
+  line-height: 1.6;
+}
+
+.video-caption p {
+  padding-top: 10px;
+  opacity: 0.7;
+}
